@@ -1,0 +1,87 @@
+var number = random(0, 10);
+
+fill(0, 0, 0);
+ellipse(200, 200, 225, 225);
+
+fill(255, 255, 255);
+textSize(100);
+text("8", 175, 225);
+
+fill(255, 0, 0);
+textSize(15);
+text(number, 10, 15);
+
+textSize(10);
+text("BY ETHAN SHENG", 163, 385);
+
+draw = function() {
+    if (mouseIsPressed) {
+        fill(100, 0, 255);
+        triangle(125, 150, 275, 150, 200, 275);
+        
+        if (number > 0 && number < 1) {
+            fill(255, 255, 255);
+            textSize(15);
+            text("DEFINITELY", 160, 200);
+        }
+        
+        if (number > 1 && number < 2) {
+            fill(255, 255, 255);
+            textSize(15);
+            text("TRY AGAIN", 160, 200);
+            text("LATER", 180, 215);
+        }
+        
+        if (number > 2 && number < 3) {
+            fill(255, 255, 255);
+            textSize(15);
+            text("NO WAY!", 170, 200);
+        }
+        
+        if (number > 3 && number < 4) {
+            fill(255, 255, 255);
+            textSize(15);
+            text("I SUPPOSE?", 157, 200);
+        }
+        if (number > 4 && number < 5) {
+            fill(255, 255, 255);
+            textSize(15);
+            text("NAH", 185, 200);
+        }
+        
+        if (number > 5 && number < 6) {
+            fill(255, 255, 255);
+            textSize(15);
+            text("MY SOURCES", 152, 185);
+            text("SAY YES", 170, 200);
+        }
+        
+        if (number > 6 && number < 7) {
+            fill(255, 255, 255);
+            textSize(15);
+            text("DON'T COUNT", 150, 180);
+            text("ON IT", 183, 195);
+        }
+        
+        if (number > 7 && number < 8) {
+            fill(255, 255, 255);
+            textSize(15);
+            text("REPLY HAZY,", 155, 195);
+            text("TRY AGAIN", 160, 210);
+        }
+        
+        if (number > 8 && number < 9) {
+            fill(255, 255, 255);
+            textSize(15);
+            text("I WOULDN'T", 159, 200);
+            text("BET ON IT", 165, 215);
+        }
+        
+        if (number > 9 && number < 10) {
+            fill(255, 255, 255);
+            textSize(15);
+            text("DOUBTFUL", 160, 200);
+        }
+        
+    }
+};
